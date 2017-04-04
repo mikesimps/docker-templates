@@ -19,7 +19,7 @@
   </Description>
   <Registry>https://hub.docker.com/r/spaziodati/openrefine/</Registry>
   <GitHub>https://github.com/SpazioDati/docker-openrefine</GitHub>
-  <Repository>SpazioDati/docker-openrefine</Repository>
+  <Repository>spazioDati/docker-openrefine</Repository>
   <Support></Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
