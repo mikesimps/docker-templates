@@ -18,8 +18,8 @@
     TBD
   </Description>
   <Registry>https://hub.docker.com/r/spaziodati/openrefine/</Registry>
-  <GitHub>https://github.com/mikesimps/docker-templates</GitHub>
-  <Repository>mikesimps/openrefine</Repository>
+  <GitHub>https://github.com/SpazioDati/docker-openrefine</GitHub>
+  <Repository>SpazioDati/docker-openrefine</Repository>
   <Support></Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
