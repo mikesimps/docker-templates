@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>DDClient</Name>
+  <Repository>captinsano/ddclient</Repository>
+  <Registry>https://registry.hub.docker.com/u/captinsano/ddclient/</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Support>http://lime-technology.com/forum/index.php?topic=38146.0</Support>
+  <Overview>This is a Dockerfile setup for DDClient. Client to update DynDNS service.&#xD;
+  Edit /config/ddclient.conf[br][br]&#xD;
+  [b][span style='color: #E80000;']Directions:[/span][/b][br]&#xD;
+  [b]/config[/b] : this path is used to store the configuration ddclient.[br]&#xD;
+  </Overview>
+  <Category>Network:DNS</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>http://i.imgur.com/nD6BNRG.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1491069331</DateInstalled>
+  <Description>This is a Dockerfile setup for DDClient. Client to update DynDNS service.&#xD;
+  Edit /config/ddclient.conf[br][br]&#xD;
+  [b][span style='color: #E80000;']Directions:[/span][/b][br]&#xD;
+  [b]/config[/b] : this path is used to store the configuration ddclient.[br]&#xD;
+  </Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/DDClient</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/DDClient" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/DDClient</Config>
+</Container>
