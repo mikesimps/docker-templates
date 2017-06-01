@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>mariadb</Name>
+  <Repository>mariadb</Repository>
+  <Registry>https://hub.docker.com/_/mariadb/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/_/mariadb/</Support>
+  <Overview>MariaDB is a community-developed fork of MySQL intended to remain free under the GNU GPL.&#xD;
+[b]Converted By Community Applications[/b]</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://www.file-extensions.org/imgs/app-icon/128/10482/mariadb-icon.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1493850361</DateInstalled>
+  <Description>MariaDB is a community-developed fork of MySQL intended to remain free under the GNU GPL.&#xD;
+[b]Converted By Community Applications[/b]</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3306</HostPort>
+        <ContainerPort>3306</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/mariadb/data/</HostDir>
+      <ContainerDir>/var/lib/mysql</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value></Value>
+      <Name>MYSQL_ROOT_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>MYSQL_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>MYSQL_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value></Value>
+      <Name>MYSQL_DATABASE</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Data" Target="/var/lib/mysql" Default="" Mode="rw" Description="Container Path: /var/lib/mysql" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/mariadb/data/</Config>
+  <Config Name="MYSQL_ROOT_PASSWORD" Target="MYSQL_ROOT_PASSWORD" Default="" Mode="" Description="Container Variable: MYSQL_ROOT_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="MYSQL_PASSWORD" Target="MYSQL_PASSWORD" Default="" Mode="" Description="Container Variable: MYSQL_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Port" Target="3306" Default="" Mode="tcp" Description="Container Port: 3306" Type="Port" Display="always" Required="false" Mask="false">3306</Config>
+  <Config Name="MYSQL_DATABASE" Target="MYSQL_DATABASE" Default="" Mode="" Description="Container Variable: MYSQL_DATABASE" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>
