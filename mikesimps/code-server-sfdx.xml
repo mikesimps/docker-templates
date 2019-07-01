@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>code-server-sfdx</Name>
+  <Repository>mikesimps/code-server-sfdx</Repository>
+  <Registry>https://hub.docker.com/r/mikesimps/code-server-sfdx/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/mikesimps/code-server-sfdx/issues</Support>
+  <Project>https://github.com/cdr/code-server</Project>
+  <Overview>
+  Customized Visual Code Server built from coder/code-server to support Salesforce development using sfdx and other extensions.[br]
+  [br]
+  Installed tools[br]
+  - sfdx cli[br]
+  - VS Code Salesforce Standard Extensions[br]
+  - ZSH (with Oh My Zsh! https://ohmyz.sh/)[br]
+  - Fira Code https://github.com/tonsky/FiraCode[br]
+  [br]
+  Other features include:[br]
+  - Install list of additional plugins from gist file[br]
+  - Set almost all code-server runtime parameters through env variables
+  </Overview>
+  <Category>Productivity, Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:8443]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/mikesimps/docker-templates/master/mikesimps/code-server-sfdx.xml</TemplateURL>
+  <Icon>https://code.visualstudio.com/favicon.ico</Icon>
+  <Description>  
+  Customized Visual Code Server built from coder/code-server to support Salesforce development using sfdx and other extensions.[br]
+  [br]
+  Installed tools[br]
+  - sfdx cli[br]
+  - VS Code Salesforce Standard Extensions[br]
+  - ZSH (with Oh My Zsh! https://ohmyz.sh/)[br]
+  - Fira Code https://github.com/tonsky/FiraCode[br]
+  [br]
+  Other features include:[br]
+  - Install list of additional plugins from gist file[br]
+  - Set almost all code-server runtime parameters through env variables
+  </Description>
+  <Labels/>
+  <Config Name="home" Target="/home/coder" Default="" Mode="rw" Description="static home directory to keep all your settings and customizations [/home/coder]" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/code-server-sfdx/</Config>
+  <Config Name="projects" Target="/home/coder/project" Default="" Mode="rw" Description="path to the directory with all your code and projects [/home/coder/project]" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="CS_PASSWORD" Target="CS_PASSWORD" Default="" Mode="" Description="Optional password. If you do not set one, a random string will be generated for you (check the log)" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="ADDL_EXTENSIONS_URL" Target="ADDL_EXTENSIONS_URL" Default="" Mode="" Description="url to RAW gist that contains list of vscode extension names, one per line (example: eamodio.gitlens)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="CS_DATADIR" Target="CS_DATADIR" Default="" Mode="" Description="path to where all persistent settings should be stored" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="CS_EXTDIR" Target="CS_EXTDIR" Default="" Mode="" Description="path to persistent extension storage (if blank, they will come under the data directory)" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="CS_CERT" Target="CS_CERT" Default="" Mode="" Description="path to certificate file" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="CS_CERTKEY" Target="CS_CERTKEY" Default="" Mode="" Description="path to certificate key file" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="CS_HOST" Target="CS_HOST" Default="" Mode="" Description="hostname of docker container [recommended to use default]" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="CS_PORT" Target="CS_PORT" Default="8443" Mode="" Description="the internal port number of the docker container service" Type="Variable" Display="advanced" Required="false" Mask="false">8443</Config>
+  <Config Name="port" Target="8443" Default="8443" Mode="tcp" Description="the external port used to access from outside the container" Type="Port" Display="advanced" Required="false" Mask="false">8443</Config>
+  <Config Name="CS_ALLOWHTTP" Target="CS_ALLOWHTTP" Default="" Mode="" Description="allow unencrypted traffic (not recommended for external network use) [set any value for true]" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="CS_NOAUTH" Target="CS_NOAUTH" Default="" Mode="" Description="do not require authentication to login (not recommened for external network use) [set any value for true]" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="CS_DISABLETELEMETRY" Target="CS_DISABLETELEMETRY" Default="" Mode="" Description="disable Coder telemetry [set any value for true]" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+</Container>
